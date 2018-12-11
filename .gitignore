@@ -29,6 +29,5 @@ gradle-app.setting
 hs_err_pid*
 
 /.idea/
-application.properties
 *.iml
 /out/
