@@ -61,10 +61,31 @@
     <!-- Formulario principal -->
     <form action="search" id="search" method="get">
         <div class="row">
-            <input class="form-control" id="q" name="q" placeholder="Escribe algo que quieras buscar"
-                   type="text"/>
-            <input class="form-control" id="max" name="max" placeholder="Escribe el número máximo de tweets a devolver"
-                   type="number"/>
+            <label for="q">
+                Escribe algo que quieras buscar
+            </label>
+            <input class="form-control" id="q" name="q" type="text"/>
+
+            <label for="max">
+                Escribe el número máximo de tweets a devolver
+            </label>
+            <input class="form-control" id="max" name="max" type="number" value="5"/>
+
+            <label for="numLikes">
+                Escribe el número mínimo de likes recibidos
+            </label>
+            <input class="form-control" id="numLikes" name="numLikes" type="number" value="0"/>
+
+            <label for="numRetweets">
+                Escribe el número mínimo de likes recibidos
+            </label>
+            <input class="form-control" id="numRetweets" name="numRetweets" type="number" value="0"/>
+
+            <label for="date">
+                Escribe la fecha a partir de la que se mostrarán tweets
+            </label>
+            <input class="form-control" id="date" name="date" type="date"/>
+
         </div>
         <div class="row">&nbsp;</div>
         <div class="row">

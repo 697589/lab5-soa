@@ -7,7 +7,11 @@ function registerSearch() {
     $("#search").submit(function (ev) {
         event.preventDefault();
         $.get($(this).attr('action'), { q: $("#q").val(),
-                                        max: $("#max").val()},
+                                        max: $("#max").val(),
+                                        numLikes: $("#numLikes").val(),
+                                        numRetweets: $("#numRetweets").val(),
+                                        date: $("#date").val()
+            },
                                         function (data) {
             $("#resultsBlock").html(Mustache.render(template, data));
         });
